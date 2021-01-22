@@ -1,0 +1,861 @@
+2020/01/27　push
+
+git checkout -b Features/UN_NEXT_EC-2907_1
+git add data/class/pages/admin/customer/LC_Page_Admin_Customer_CtiSearch.php
+git add data/Smarty/templates/admin/customer/cti_search.tpl
+git add data/Smarty/templates/admin/customer_cti_search_frame.tpl
+git add html/user_data/packages/admin/custom_css/xc.css
+git commit -m "CTI画面の修正事項"
+git push -u origin Features/UN_NEXT_EC-2907_1
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2906_1
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add data/class/helper/SC_Helper_Order.php
+git commit -m "領収書別途発行フラグの修正"
+git push -u origin Features/UN_NEXT_EC-2906_1
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2908_1
+git add data/Smarty/templates/admin/products/index2.tpl
+git commit -m "商品詳細検索「納期区分」「納期指定日」「納期テキスト」の項目追加と「売価」の税込表示"
+git push -u origin Features/UN_NEXT_EC-2908_1
+git checkout second_develop
+
+2020/01/29　push
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2912_2
+git add data/Smarty/templates/admin/order/search_order.tpl
+git commit -m "伝票色の区分/ステータスによる色分け・CTI画面との仕様統一"
+git push -u origin Features/UN_NEXT_EC-2912_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2916_1
+git add data/Smarty/templates/admin/order/batch.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Batch.php
+git commit -m "一括処理　納期連絡「必要」に関する修正"
+git push -u origin Features/UN_NEXT_EC-2916_1
+git checkout second_develop
+
+2020/02/05 push
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2934_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Exchange_Request.php
+git add data/Smarty/templates/admin/order/pdf_templates/delivery_note_pdf.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Delivery_Date_Contact_Slip.php
+git commit -m "納品書等　微修正・調整"
+git push -u origin Features/UN_NEXT_EC-2934_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_2
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "[kakou_meisai]の修正"
+git push -u origin Features/UN_NEXT_EC-2913_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2954_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "顧客呼び出し時のリセット項目についての修正"
+git push -u origin Features/UN_NEXT_EC-2954_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2947_8
+git add data/Smarty/templates/default/manufacture/index_input_logo.tpl
+git add data/Smarty/templates/default/manufacture/index_position.tpl
+git add data/Smarty/templates/default/manufacture/manufacture_frame.tpl
+git add data/Smarty/templates/sphone/manufacture/index_input_logo.tpl
+git add data/Smarty/templates/sphone/manufacture/index_position.tpl
+git add data/Smarty/templates/sphone/manufacture/manufacture_frame.tpl
+git commit -m "テンプレート変更【加工ページ】"
+git push -u origin Features/UN_NEXT_EC-2947_8
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_4
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "[meisai]の修正"
+git push -u origin Features/UN_NEXT_EC-2913_4
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2973_4_1
+git add data/Smarty/templates/default/catalog/catalog_order.tpl
+git add data/Smarty/templates/default/contact/index.tpl
+git add data/Smarty/templates/default/contact/mitumori_index.tpl
+git add data/Smarty/templates/default/frontparts/order_information.tpl
+git add data/Smarty/templates/default/frontparts/form_personal_input.tpl
+git add data/Smarty/templates/default/frontparts/form_register.tpl
+git add data/Smarty/templates/default/mypage/delivery_addr.tpl
+git add data/Smarty/templates/default/shopping/confirm.tpl
+git add data/Smarty/templates/default/shopping/deliv.tpl
+git add data/Smarty/templates/default/shopping/delivery_date.tpl
+git add data/Smarty/templates/default/shopping/payment.tpl
+
+git add data/Smarty/templates/sphone/catalog/catalog_order.tpl
+git add data/Smarty/templates/sphone/contact/index.tpl
+git add data/Smarty/templates/sphone/contact/mitumori_index.tpl
+git add data/Smarty/templates/sphone/frontparts/form_personal_input_order_information.tpl
+git add data/Smarty/templates/sphone/frontparts/form_personal_input.tpl
+git add data/Smarty/templates/sphone/frontparts/form_register.tpl
+git add data/Smarty/templates/sphone/mypage/delivery_addr.tpl
+git add data/Smarty/templates/sphone/shopping/confirm.tpl
+git add data/Smarty/templates/sphone/shopping/deliv.tpl
+git add data/Smarty/templates/sphone/shopping/delivery_date.tpl
+git add data/Smarty/templates/sphone/shopping/payment.tpl
+git commit -m "郵便番号部分の注釈追加、注文画面の注釈追加"
+git push -u origin Features/UN_NEXT_EC-2973_4_1
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2978_4
+git add data/class/SC_OrderSession.php
+git commit -m "シルクプリントの版代、データ作成料、手数料の自動計算排除対応"
+git push -u origin Features/UN_NEXT_EC-2978_4
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2955_3_1
+git add data/Smarty/templates/sphone/shopping/delivery_date.tpl
+git add data/Smarty/templates/default/shopping/delivery_date.tpl
+git commit -m "「○万円」の記載の修正"
+git push -u origin Features/UN_NEXT_EC-2955_3_1
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2985_3
+git add data/Smarty/templates/default/manufacture/index_position.tpl
+git add data/Smarty/templates/default/manufacture/index_type.tpl
+git add data/Smarty/templates/default/products/detail.tpl
+git add data/Smarty/templates/default/shopping/payment.tpl
+git add data/Smarty/templates/sphone/manufacture/index_position.tpl
+git add data/Smarty/templates/sphone/manufacture/index_type.tpl
+git add data/Smarty/templates/sphone/products/detail.tpl
+git add data/Smarty/templates/sphone/shopping/payment.tpl
+git commit -m "加工ページの注釈追加、領収書ダウンロード期間延長、セット商品用border追加"
+git push -u origin Features/UN_NEXT_EC-2985_3
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2989_1
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Shipping_Instruction.php
+git commit -m "出荷実績処理時にdtb_order_invoiceに引き継がれない項目がある"
+git push -u origin Features/UN_NEXT_EC-2989_1
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_5
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "メール[meisai][kakou_meisai]キャンセル明細は取得しない対応"
+git push -u origin Features/UN_NEXT_EC-2913_5
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2996_1
+git add data/Smarty/templates/admin/products/accounting_purpose.tpl
+git add data/class/helper/SC_Helper_CSV.php
+git add html/core/protected/models/Klass.php
+git commit -m "売上データ＋出荷確定後変更データの修正残分"
+git push -u origin Features/UN_NEXT_EC-2996_1
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3009_3
+git add data/Smarty/templates/default/shopping/payment.tpl
+git add data/Smarty/templates/default/catalog/catalog_work.tpl
+git add data/Smarty/templates/default/shopping/confirm.tpl
+git add data/Smarty/templates/default/shopping/complete.tpl
+git add data/Smarty/templates/default/contact/mitumori_confirm.tpl
+git add data/Smarty/templates/default/contact/mitumori_index.tpl
+git add data/Smarty/templates/default/frontparts/form_register.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_admin.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_customer.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_mitumori_admin.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_mitumori_customer.tpl
+git add data/Smarty/templates/default/mypage/login.tpl
+git add data/Smarty/templates/default/shopping/review_list.tpl
+git add data/Smarty/templates/sphone/shopping/payment.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_order.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_order_confirm.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_work.tpl
+git add data/Smarty/templates/sphone/shopping/confirm.tpl
+git add data/Smarty/templates/sphone/shopping/complete.tpl
+git add data/Smarty/templates/sphone/contact/mitumori_confirm.tpl
+git add data/Smarty/templates/sphone/contact/mitumori_index.tpl
+git add data/Smarty/templates/sphone/frontparts/form_register.tpl
+git add data/Smarty/templates/sphone/mypage/login.tpl
+git commit -m "テンプレート変更要望_20200218"
+git push -u origin Features/UN_NEXT_EC-3009_3
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3010_3
+git add data/Smarty/templates/default/catalog/catalog_view/34_2_catalog.tpl
+git add data/Smarty/templates/default/catalog/catalog_view/61_catalog.tpl
+git add data/Smarty/templates/default/catalog/catalog_view/61_catalogs.tpl
+git add data/Smarty/templates/default/catalog/catalog_view/b0_catalog.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_view/34_2_catalog.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_view/61_catalog.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_view/61_catalogs.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_view/b0_catalog.tpl
+git commit -m "【テンプレート追加要望】カタログ請求ページ：詳細ページの追加"
+git push -u origin Features/UN_NEXT_EC-3010_3
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3009_5
+git add data/Smarty/templates/default/manufacture/index_position.tpl
+git add data/Smarty/templates/sphone/manufacture/index_position.tpl
+git commit -m "テンプレート変更要望_20200219"
+git push -u origin Features/UN_NEXT_EC-3009_5
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3014_2
+git add data/class/helper/SC_Helper_CSV.php
+git commit -m "出荷指示 B2用の品名を「ユニフォーム類」→「衣服」に修正"
+git push -u origin Features/UN_NEXT_EC-3014_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3015_2
+git add data/Smarty/templates/default/shopping/payment.tpl
+git add data/Smarty/templates/sphone/catalog/catalog_order.tpl
+git add data/Smarty/templates/sphone/shopping/payment.tpl
+git commit -m "【テンプレート変更要望】カタログ請求ページ/支払い方法選択画面"
+git push -u origin Features/UN_NEXT_EC-3015_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3020_2
+git add data/Smarty/templates/default/shopping/review_list.tpl
+git add data/Smarty/templates/default/site_frame.tpl
+git add data/Smarty/templates/sphone/site_frame.tpl
+git commit -m "【テンプレート変更要望】2020/02/20"
+git push -u origin Features/UN_NEXT_EC-3020_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3022_2
+git add data/Smarty/templates/default/mail_templates/order_refund_mail.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Refund.php
+git commit -m "返金一括処理のメールのテンプレート変更"
+git push -u origin Features/UN_NEXT_EC-3022_2
+git checkout second_develop
+
+▼リリース後
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_6
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "メール[meisai][kakou_meisai]の追加修正対応"
+git push -u origin Features/UN_NEXT_EC-2913_6
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_7
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "メール[meisai][kakou_meisai]の追加修正対応2"
+git push -u origin Features/UN_NEXT_EC-2913_7
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3037_2
+git add data/Smarty/templates/default/manufacture/index_input_logo.tpl
+git add data/Smarty/templates/sphone/manufacture/index_input_logo.tpl
+git commit -m "【テンプレート変更要望】2020/02/24"
+git push -u origin Features/UN_NEXT_EC-3037_2
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3043_3
+git add data/Smarty/templates/default/mypage/mail/henpin.tpl
+git add data/Smarty/templates/default/mail_templates/batch_arrival_mail.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_admin.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_customer.tpl
+git commit -m "【メールテンプレート文言変更】2020/02/24"
+git push -u origin Features/UN_NEXT_EC-3043_3
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3043_4
+git add data/Smarty/templates/default/mail_templates/contact_mail_admin.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_customer.tpl
+git commit -m "【メールテンプレート文言変更】2020/02/24-2"
+git push -u origin Features/UN_NEXT_EC-3043_4
+git checkout second_develop
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3078_2
+git add data/class/SC_SelectSql.php
+git commit -m "「除外キーワード」の検索条件の変更"
+git push -u origin Features/UN_NEXT_EC-3078_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3078_4
+git add data/class/SC_SelectSql.php
+git commit -m "「除外キーワード」の検索条件の変更2"
+git push -u origin Features/UN_NEXT_EC-3078_4
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_8
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "メール[meisai][kakou_meisai]の追加修正対応3"
+git push -u origin Features/UN_NEXT_EC-2913_8
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3092_2
+git add data/Smarty/templates/admin/order/exchange_request.tpl
+git add data/Smarty/templates/admin/order/pdf_templates/delivery_note_pdf.tpl
+git commit -m "【テンプレート変更要望】納品書テンプレート変更"
+git push -u origin Features/UN_NEXT_EC-3092_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3092_3
+git add data/Smarty/templates/admin/order/exchange_request.tpl
+git commit -m "【テンプレート変更要望】納品書テンプレート変更_修正"
+git push -u origin Features/UN_NEXT_EC-3092_3
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-2913_9
+git add data/class/helper/SC_Helper_Mail.php
+git add data/consts.php
+git commit -m "メール[meisai][kakou_meisai]の追加修正対応4"
+git push -u origin Features/UN_NEXT_EC-2913_9
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3078_5
+git add data/class/SC_SelectSql.php
+git commit -m "「除外キーワード」の検索条件の変更3"
+git push -u origin Features/UN_NEXT_EC-3078_5
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3032_2
+git add data/class/pages/mypage/LC_Page_Mypage_Extimate.php
+git commit -m "フロント 見積もり→受注のアラート修正"
+git push -u origin Features/UN_NEXT_EC-3032_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3118_2
+git add data/Smarty/templates/admin/order/buy_return_sample.tpl
+git commit -m "受注 サンプル処理時のアラートの追加・変更"
+git push -u origin Features/UN_NEXT_EC-3118_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3139_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "受注 管理画面からの「メール便」選択で2明細以上も許容"
+git push -u origin Features/UN_NEXT_EC-3139_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3135_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Shipping_Instruction.php
+git commit -m "セット組：保管中の出荷確定許容対応"
+git push -u origin Features/UN_NEXT_EC-3135_3
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3155_2
+git add data/Smarty/templates/default/shopping/payment.tpl
+git add data/Smarty/templates/sphone/shopping/payment.tpl
+git commit -m "フロント メール便選択時の支払い方法変更対応"
+git push -u origin Features/UN_NEXT_EC-3155_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3156_2
+git add data/class/pages/shopping/LC_Page_Shopping_DeliveryDate.php
+git commit -m "フロント 見積もり購入導線内メール便選択可否対応"
+git push -u origin Features/UN_NEXT_EC-3156_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3158_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add html/user_data/packages/admin/js/order_detail.js
+git commit -m "サンプル貸し出し不可商品を含むサンプル伝票の伝票確定を許容"
+git push -u origin Features/UN_NEXT_EC-3158_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3161_2
+git add data/class/batch/LC_Batch_Step_Mail.php
+git commit -m "ステップメール値引額タグの値取得対応"
+git push -u origin Features/UN_NEXT_EC-3161_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3168_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "クレジット返金手数料切り捨て対応"
+git push -u origin Features/UN_NEXT_EC-3168_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3173_2
+git add data/Smarty/templates/admin/order/invoice.tpl
+git commit -m "帳票　請求書の振込先修正対応"
+git push -u origin Features/UN_NEXT_EC-3173_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3175_2
+git add data/Smarty/templates/admin/order/change_pay.tpl
+git commit -m "返品・交換不可アラートの改善"
+git push -u origin Features/UN_NEXT_EC-3175_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3178_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Search_Detail.php
+git commit -m "受注詳細検索「すべて引当済」条件修正"
+git push -u origin Features/UN_NEXT_EC-3178_2
+git checkout un_master
+
+cd /var/www/ecorange
+git checkout -b Features/UN_NEXT_EC-3181_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Exchange_Request.php
+git add data/class/pages/admin/order/manufacture/LC_Page_Admin_Order_Manufacture_Manufacture.php
+git commit -m "社内指摘261,917修正対応"
+git push -u origin Features/UN_NEXT_EC-3181_2
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3182_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Set_Info.php
+git add data/class/pages/admin/order/manufacture/LC_Page_Admin_Order_Manufacture_Manufacture.php
+git commit -m "セール商品価格表示・加工編集アラート調整"
+git push -u origin Features/UN_NEXT_EC-3182_2
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3183_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "複写時、見積もり→受注時に加工単価が変更されてしまう不具合修正"
+git push -u origin Features/UN_NEXT_EC-3183_2
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC_CS-110_2
+git add data/class/pages/products/LC_Page_Products_Detail.php
+git commit -m "セット商品のサイズ並び順修正"
+git push -u origin Features/UN_NEXT_EC_CS-110_2
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3184_2
+git add data/Smarty/templates/default/mail_templates/order_refund_mail.tpl
+git commit -m "【テンプレート変更】返金メールの修正"
+git push -u origin Features/UN_NEXT_EC-3184_2
+git checkout un_master
+
+git checkout -b Features/UN_EC_CS-111_3
+git add data/Smarty/templates/admin/order/detail_product_item.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "セール商品を含む伝票のセール終了後の価格引き継ぎについて2"
+git push -u origin Features/UN_EC_CS-111_3
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3187_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "受注返品処理修正/SBPS連携処理修正"
+git push -u origin Features/UN_NEXT_EC-3187_2
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3187_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "受注返却処理一部再修正"
+git push -u origin Features/UN_NEXT_EC-3187_3
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3190_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "受注　社内指摘　No.959、No.951　修正対応"
+git push -u origin Features/UN_NEXT_EC-3190_3
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3191_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Search_Detail.php
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "受注　社内指摘　No.960、No.958 修正対応"
+git push -u origin Features/UN_NEXT_EC-3191_2
+git checkout un_master
+
+git checkout -b Features/UN_NEXT_EC-3183_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "複写時、見積もり→受注時に加工単価が変更されてしまう不具合修正2"
+git push -u origin Features/UN_NEXT_EC-3183_3
+git checkout un_master
+
+git checkout -b Features/sys_orange_29_6
+git add data/Smarty/templates/admin/order/pdf_templates/pdf_sample_product_purchase.tpl
+git commit -m "帳票　サンプル商品買取・返却書　顧客名に法人名追加"
+git push -u origin Features/sys_orange_29_6
+git checkout un_master
+
+git checkout -b Features/sys_orange32_5
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add html/user_data/packages/admin/js/order_detail.js
+git commit -m "受注　顧客マスタと情報が異なる場合アラート表示対応"
+git push -u origin Features/sys_orange32_5
+git checkout un_master
+
+git checkout -b Features/sys_orange43_1
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "顧客マスタと注文者情報の比較ロジック内　NULLと空文字の判定修正"
+git push -u origin Features/sys_orange43_1
+git checkout un_master
+
+git checkout -b Features/sys_orange43_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "顧客マスタと注文者情報の比較ロジック内　NULLと空文字の判定修正2"
+git push -u origin Features/sys_orange43_3
+git checkout un_master
+
+git checkout -b Features/sys_orange44_5
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "受注　見積もり→受注、複写時に　卸価格から通常価格に戻ってしまう不具合の修正"
+git push -u origin Features/sys_orange44_5
+git checkout un_master
+
+git checkout -b Features/sys_orange46_4
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add data/Smarty/templates/admin/order/detail_product_item.tpl
+git commit -m "商品価格改定前後の複写、交換返品処理による商品価格の整合性の改善"
+git push -u origin Features/sys_orange46_4
+git checkout un_master
+
+git checkout -b Features/sys_orange53_6
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "伝票複写時の動作改善 記号/加工単価"
+git push -u origin Features/sys_orange53_6
+git checkout un_master
+
+git checkout -b Features/sys_orange54_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add data/class/SC_Order.php
+git commit -m "セール表示調整"
+git push -u origin Features/sys_orange54_3
+git checkout un_master
+
+git checkout -b Features/sys_orange76_3
+git add data/class/ajax/admin/order/LC_Ajax_Order_Detail.php
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Search_Detail.php
+git add data/consts.php
+git commit -m "セール表示調整2/返品検索条件修正"
+git push -u origin Features/sys_orange76_3
+git checkout un_master
+
+git checkout -b Features/sys_orange88_2
+git add data/Smarty/templates/default/mail_templates/contact_mail_mitumori_admin.tpl
+git add data/Smarty/templates/default/mail_templates/contact_mail_mitumori_customer.tpl
+git commit -m "見積M追加修正"
+git push -u origin Features/sys_orange88_2
+git checkout un_master
+
+git checkout -b Features/sys_orange90_3
+git add data/class/helper/SC_Helper_Mail.php
+git commit -m "メールタグ参照変更"
+git push -u origin Features/sys_orange90_3
+git checkout un_master
+
+git checkout -b Features/sys_orange96_5
+git add data/class/ajax/order/LC_Ajax_SalesOrder.php
+git add data/Smarty/templates/admin/order/set_info.tpl
+git add data/Smarty/templates/admin/order/set_info/split_order.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Set_Info.php
+git commit -m "分割時代引き手数料再計算処理挿入"
+git push -u origin Features/sys_orange96_5
+git checkout un_master
+
+git checkout -b Features/sys_orange110_3
+git add data/Smarty/templates/admin/order/pdf_templates/article_receiving_book_pdf.tpl
+git add data/Smarty/templates/admin/order/pdf_templates/pdf_product_attachment.tpl
+git commit -m "出荷指示からの帳票出力修正"
+git push -u origin Features/sys_orange110_3
+git checkout un_master
+
+git checkout -b Features/sys_orange73_4
+git add html/core/protected/migrations/m200620_100000_add_sales_force_id_for_dtb_customer.php
+git add html/core/protected/migrations/m200620_101500_add_index_for_sales_force_id.php
+git commit -m "顧客マスタSFID項目追加"
+git push -u origin Features/sys_orange73_4
+git checkout un_master
+
+git checkout -b Features/sys_orange170_2
+git add data/class/pages/admin/customer/LC_Page_Admin_Customer_Edit.php
+git add data/Smarty/templates/admin/customer/edit_confirm.tpl
+git add data/Smarty/templates/admin/customer/edit.tpl
+git commit -m "顧客マスタSFID編集登録項目追加"
+git push -u origin Features/sys_orange170_2
+git checkout un_master
+
+git checkout -b Features/sys_orange158_6
+git add data/Smarty/templates/default/shopping/payment.tpl
+git add data/Smarty/templates/sphone/shopping/payment.tpl
+git add data/class/pages/shopping/LC_Page_Shopping_Payment.php
+git commit -m "フロント支払い方法選択 修正"
+git push -u origin Features/sys_orange158_6
+git checkout un_master
+
+git checkout -b Features/sys_orange154_5
+git add data/Smarty/templates/admin/order/delivery_date_contact_slip.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Delivery_Date_Contact_Slip.php
+git commit -m "納期連絡票　営業用文言追加"
+git push -u origin Features/sys_orange154_5
+git checkout un_master
+
+git checkout -b Features/sys_orange227_15
+git add data/class_extends/page_extends/mypage/LC_Page_Mypage_Index_Popup_Change_Ex.php
+git add data/class/pages/mypage/LC_Page_Mypage_Index_Popup_Change.php
+git add html/mypage/index_popup_change.php
+git add data/Smarty/templates/default/mypage/index.tpl
+git add data/Smarty/templates/default/mypage/index_popup_change.tpl
+git add data/Smarty/templates/default/mypage/mail/change.tpl
+git add data/json/front_cond_check_item_data.json
+git commit -m "フロント_マイページ注文内容変更申請機能追加"
+git push -u origin Features/sys_orange227_15
+git checkout un_master
+
+git checkout -b Features/sys_orange226_4
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add data/Smarty/templates/admin/order/delivery_date_contact_slip.tpl
+git commit -m "納期連絡票修正/複写時初期化項目追加"
+git push -u origin Features/sys_orange226_4
+git checkout un_master
+
+git checkout -b Features/sys_orange252_2
+git add data/Smarty/templates/admin/order/exchange_request.tpl
+git add data/Smarty/templates/admin/order/pdf_templates/delivery_note_sample_pdf.tpl
+git commit -m "サンプル納品書　文言修正"
+git push -u origin Features/sys_orange252_2
+git checkout un_master
+
+git checkout -b Features/sys_orange320_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add html/user_data/packages/admin/js/order_detail.js
+git commit -m "法人会員　摘要未入力アラート"
+git push -u origin Features/sys_orange320_3
+git checkout un_master
+
+git checkout -b Features/sys_orange320_5
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add html/user_data/packages/admin/js/order_detail.js
+git commit -m "法人会員　摘要未入力アラート_修正版"
+git push -u origin Features/sys_orange320_5
+git checkout un_master
+
+git checkout -b Features/sys_orange348_3
+git add data/class/helper/SC_Helper_Manufacture.php
+git commit -m "加工入力で「0（半角）」の許容"
+git push -u origin Features/sys_orange348_3
+git checkout un_master
+
+git checkout -b Features/sys_orange366_6
+git add data/class/SC_ManufactureAdminSession.php
+git commit -m "個人名セット価格「0円」不具合対応"
+git push -u origin Features/sys_orange366_6
+git checkout un_master
+
+git checkout -b Features/sys_orange329_7
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Shipment_Instruction.php
+git add html/core/protected/migrations/m200717_120000_insert_threshold_mtb_constants.php
+git commit -m "出荷指示時の大口案件の付与"
+git push -u origin Features/sys_orange329_7
+git checkout un_master
+
+git checkout -b Features/sys_orange366_12
+git add data/class/SC_ManufactureAdminSession.php
+git commit -m "個人名セット価格「0円」不具合対応_修正版"
+git push -u origin Features/sys_orange366_12
+git checkout un_master
+
+git checkout -b Features/sys_orange366_13
+git add data/class/SC_ManufactureAdminSession.php
+git commit -m "個人名セット価格「0円」不具合対応_修正版"
+git push -u origin Features/sys_orange366_13
+git checkout un_master
+
+git checkout -b Features/sys_orange481_7
+git add data/class/SC_ManufactureAdminSession.php
+git add data/class/SC_Manufacture.php
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "個人名セット価格不具合修正"
+git push -u origin Features/sys_orange481_7
+git checkout un_master
+
+git checkout -b Features/sys_orange227_20
+git add data/class_extends/page_extends/mypage/LC_Page_Mypage_Index_Popup_Change_Ex.php
+git add data/class/pages/mypage/LC_Page_Mypage_Index_Popup_Change.php
+git add html/mypage/index_popup_change.php
+git add data/Smarty/templates/default/mypage/index.tpl
+git add data/Smarty/templates/default/mypage/index_popup_change.tpl
+git add data/Smarty/templates/default/mypage/mail/change.tpl
+git add data/json/front_cond_check_item_data.json
+git add data/Smarty/templates/sphone/mypage/index.tpl
+git add data/Smarty/templates/sphone/mypage/index_popup_change.tpl
+git add data/class/SC_Order.php
+git commit -m "マイページ注文内容変更申請機能追加"
+git push -u origin Features/sys_orange227_20
+git checkout un_master
+
+git checkout -b Features/sys_orange528_5
+git add html/user_data/packages/admin/js/manufacture.js
+git add data/Smarty/templates/admin/order/manufacture/manufacture_components/content_logo.tpl
+git commit -m "刺しゅう特殊パターンの価格再計算不具合修正"
+git push -u origin Features/sys_orange528_5
+git checkout un_master
+
+git checkout -b Features/sys_orange227_30
+git add data/class_extends/page_extends/mypage/LC_Page_Mypage_Index_Popup_Change_Ex.php
+git add data/class/pages/mypage/LC_Page_Mypage_Index_Popup_Change.php
+git add html/mypage/index_popup_change.php
+git add data/Smarty/templates/default/mypage/index.tpl
+git add data/Smarty/templates/default/mypage/index_popup_change.tpl
+git add data/Smarty/templates/default/mypage/mail/change.tpl
+git add data/json/front_cond_check_item_data.json
+git add data/Smarty/templates/sphone/mypage/index.tpl
+git add data/Smarty/templates/sphone/mypage/index_popup_change.tpl
+git add data/class/SC_Order.php
+git commit -m "注文内容変更申請追加"
+git push -u origin Features/sys_orange227_30
+git checkout un_master
+
+git checkout -b Features/sys_orange389_7
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git add data/Smarty/templates/admin/order/detail.tpl
+git add html/core/protected/migrations/m200807_170000_insert_counter_mtb_constants.php
+git commit -m "出荷予定日入力時の裾直し点数の表示"
+git push -u origin Features/sys_orange389_7
+git checkout un_master
+
+git checkout -b Features/sys_orange660_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Exchange_Request.php
+git commit -m "サンプル納品書の支払い方法文言の変更"
+git push -u origin Features/sys_orange660_2
+git checkout un_master
+
+git checkout -b Features/sys_orange710_2
+git add data/Smarty/templates/default/mypage/index_popup_change.tpl
+git add data/Smarty/templates/sphone/mypage/index_popup_change.tpl
+git commit -m "注文内容変更申請文言変更"
+git push -u origin Features/sys_orange710_2
+git checkout un_master
+
+git checkout -b Features/sys_orange766_2
+git add data/Smarty/templates/default/mypage/index.tpl
+git add data/Smarty/templates/sphone/mypage/index.tpl
+git commit -m "返品交換表示条件修正"
+git push -u origin Features/sys_orange766_2
+git checkout un_master
+
+git checkout -b Features/sys_orange359_2
+git add data/class/SC_OrderSession.php
+git add data/class/helper/SC_Helper_Purchase.php
+git add data/class/pages/admin/order/LC_Page_Admin_Buy_Return_Sample.php
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Change_Pay.php
+git commit -m "領収書フラグ更新部分コメントアウト"
+git push -u origin Features/sys_orange359_2
+git checkout un_master
+
+git checkout -b Features/sys_orange359_3
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Shipment_Instruction.php
+git commit -m "出荷指示納品書フラグNULL対応"
+git push -u origin Features/sys_orange359_3
+git checkout un_master
+
+git checkout -b Features/sys_orange1040_3
+git add data/class/pages/mypage/LC_Page_Mypage.php
+git commit -m "フロント表示ステータス変更"
+git push -u origin Features/sys_orange1040_3
+git checkout un_master
+
+git checkout -b Features/sys_orange1108_2
+git add data/Smarty/templates/admin/order/detail.tpl
+git commit -m "受注管理一部のautocompleteをoffのする対応"
+git push -u origin Features/sys_orange1108_2
+git checkout un_master
+
+git checkout -b Features/sys_orange1016_6
+git add html/core/protected/migrations/m200918_130000_add_multculmns_for_dtb_customer.php
+git add data/class/pages/admin/customer/LC_Page_Admin_Customer_Edit.php
+git add data/Smarty/templates/admin/customer/edit_confirm.tpl
+git add data/Smarty/templates/admin/customer/edit.tpl
+git add data/class/helper/SC_Helper_Customer.php
+git commit -m "掛売関連項目追加(SF用)"
+git push -u origin Features/sys_orange1016_6
+git checkout un_master
+
+git checkout -b Features/sys_orange837_7
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Set_Info.php
+git commit -m "分割時確認チェックの複写一部改善"
+git push -u origin Features/sys_orange837_7
+git checkout un_master
+
+git checkout -b Features/sys_orange1469_2
+git add data/class/SC_SelectSql.php
+git commit -m "受注検索「除外キーワード」仕様調整"
+git push -u origin Features/sys_orange1469_2
+git checkout un_master
+
+git checkout -b Features/sys_orange1519_2
+git add data/class/pages/admin/customer/LC_Page_Admin_Customer_Edit.php
+git commit -m "顧客管理画面の年月選択範囲調整"
+git push -u origin Features/sys_orange1519_2
+git checkout un_master
+
+git checkout -b Features/sys_orange1477_4
+git add data/class/ajax/admin/order/LC_Ajax_CondSearch.php
+git add data/Smarty/templates/admin/order/search_order.tpl
+git add html/user_data/packages/admin/js/customers_search.js
+git add data/consts.php
+git add data/Smarty/templates/admin/order/search_order_detail.tpl
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Search_Detail.php
+git commit -m "個人検索保存機能追加"
+git push -u origin Features/sys_orange1477_4
+git checkout un_master
+
+git checkout -b Features/sys_orange1494_2
+git add data/class/pages/admin/order/LC_Page_Admin_Order_Detail.php
+git commit -m "支払い方法→発送方法自動変更"
+git push -u origin Features/sys_orange1494_2
+git checkout un_master
+
+git checkout -b Features/sys_orange2222_2
+git add data/Smarty/templates/default/mypage/mail/henpin.tpl
+git commit -m "返品メールテンプレート修正"
+git push -u origin Features/sys_orange2222_2
+git checkout un_master
+
+git checkout -b Features/sys_orange1694_2
+git add data/Smarty/templates/admin/order/detail.tpl
+git commit -m "見積もり済　ボタン条件修正"
+git push -u origin Features/sys_orange1694_2
+git checkout un_master
+----------------------------------------------------------------------------------------------------------------------------------済
+
+cd /var/www/ecorange
+git fetch origin
+git reset --hard origin/un_master
+
+
+
+
+./html/core/protected/yiic migrate
+
+
+
+
